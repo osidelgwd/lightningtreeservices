@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const data = {
-	logo: "/assets/img/logo_2.svg",
+	logo: "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
 	logoUrl: "/",
 	menuItems: [
 		{ label: "ABOUT", href: "/about" },

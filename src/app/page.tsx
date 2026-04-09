@@ -89,7 +89,7 @@ const featureData: FeatureDataProps = {
 const workingProcessData: WorkingProcessDataProps = {
     sectionTitle: "OUR <span>PROFESSIONAL</span> WORKFLOW",
     subtitle: "HOW WE WORK",
-    logo: "/assets/img/logo.svg",
+    logo: "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
     steps: [
         {
             title: "01 | Free Assessment",

@@ -5,7 +5,7 @@ import parser from "html-react-parser";
 import FooterForm from "../Forms/FooterForm";
 
 const data: FooterDataProps = {
-    logo: "https://gwd-website.b-cdn.net/lightning/LOGO-treservice.png",
+    logo: "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
     newsletterText:
         "Providing expert tree care and emergency response. <br /> Subscribe for safety alerts and professional maintenance tips.",
     menus: [

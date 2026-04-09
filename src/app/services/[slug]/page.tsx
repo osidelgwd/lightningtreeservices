@@ -124,7 +124,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
 const workingProcessData: WorkingProcessDataProps = {
     sectionTitle: "OUR PROFESSIONAL <span>PROCESS</span>",
     subtitle: "PHASE BY PHASE",
-    logo: "/assets/img/logo.svg",
+    logo: "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
     steps: [
         { title: "01 | Assessment", description: "Detailed evaluation of the service area." },
         { title: "02 | Preparation", description: "Securing the site and equipment." },

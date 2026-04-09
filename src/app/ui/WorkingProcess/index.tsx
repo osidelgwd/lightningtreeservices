@@ -44,7 +44,7 @@ export default function WorkingProcessSection({
 							<Image
 								src={data.logo}
 								alt="logo"
-								width={150}
+								width={200}
 								height={80}
 								className="object-contain"
 							/>

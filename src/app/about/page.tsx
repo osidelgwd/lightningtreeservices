@@ -123,12 +123,12 @@ const teamMembersData: TeamMembersDataProps = {
 const brandLogos: BrandDataProps = {
     // Aquí puedes poner logos de certificaciones (ISA, BBB, etc) o marcas de equipos (Stihl, Husqvarna)
     brands: [
-        "/assets/img/brand_logo_1.svg",
-        "/assets/img/brand_logo_2.svg",
-        "/assets/img/brand_logo_3.svg",
-        "/assets/img/brand_logo_4.svg",
-        "/assets/img/brand_logo_5.svg",
-        "/assets/img/brand_logo_6.svg",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
+        "https://gwd-website.b-cdn.net/lightning/logo2tree.png",
     ],
 };
 
