@@ -22,7 +22,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Trimming & Pruning", link: "", active: true },
+            { label: "Trimming & Pruning", link: "/tree-trimming-pruning", active: true },
         ],
         titleHighlight: "<span>EXPERT STRUCTURAL</span> TRIMMING & PRUNING",
         video: {
@@ -49,7 +49,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Tree Removal", link: "", active: true },
+            { label: "Tree Removal", link: "/tree-removal", active: true },
         ],
         titleHighlight: "<span>SAFE & STRATEGIC</span> TREE REMOVAL",
         video: {
@@ -76,7 +76,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Fruit Tree Care", link: "", active: true },
+            { label: "Fruit Tree Care", link: "/fruit-tree-care", active: true },
         ],
         titleHighlight: "<span>SEASONAL & PRODUCTIVE</span> FRUIT TREE CARE",
         video: {
@@ -103,7 +103,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Yard Clean Up", link: "", active: true },
+            { label: "Yard Clean Up", link: "/yard-clean-up", active: true },
         ],
         titleHighlight: "<span>PROFESSIONAL SEASONAL</span> YARD CLEAN UP",
         video: {
@@ -130,7 +130,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Blackberry Removal", link: "", active: true },
+            { label: "Blackberry Removal", link: "/blackberry-removal", active: true },
         ],
         titleHighlight: "<span>TOTAL ERADICATION</span> BLACKBERRY REMOVAL",
         video: {
@@ -157,7 +157,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Sod Installation", link: "", active: true },
+            { label: "Sod Installation", link: "/sod-grass-installation", active: true },
         ],
         titleHighlight: "<span>INSTANT LUSH GREEN</span> SOD INSTALLATION",
         video: {
@@ -184,7 +184,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "River Rock & Gravel", link: "", active: true },
+            { label: "River Rock & Gravel", link: "/river-rock-gravel", active: true },
         ],
         titleHighlight: "<span>DURABLE & DECORATIVE</span> ROCK SOLUTIONS",
         video: {
@@ -211,7 +211,7 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         breadcrumb: [
             { label: "Home", link: "/", active: false },
             { label: "Services", link: "/services", active: false },
-            { label: "Fences & Pavers", link: "", active: true },
+            { label: "Fences & Pavers", link: "/fences-and-pavers", active: true },
         ],
         titleHighlight: "<span>CUSTOM CRAFTED</span> FENCES & PAVERS",
         video: {
