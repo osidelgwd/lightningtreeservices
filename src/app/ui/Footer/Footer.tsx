@@ -23,15 +23,13 @@ const data: FooterDataProps = {
                 { label: "ABOUT US", url: "/about" },
                 { label: "OUR GALLERY", url: "/gallery" },
                 { label: "LATEST BLOG", url: "/blog" },
-                { label: "WORK PROJECTS", url: "/projects" },
             ],
         },
         {
             title: "SERVICES",
             links: [
                 { label: "TREE SERVICES", url: "/services" },
-                { label: "SERVICE DETAILS", url: "/services/services-details" },
-                { label: "PROJECT DETAILS", url: "/projects/project-details" },
+                { label: "SERVICE DETAILS", url: "/services" },
                 { label: "EMERGENCY CARE", url: "/contact" },
             ],
         },

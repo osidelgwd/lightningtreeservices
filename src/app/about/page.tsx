@@ -40,7 +40,7 @@ const aboutUsData: AboutUsDataProps = {
         "Since our founding, we have specialized in complex removals and precise pruning. Our solid commitment to being fully licensed, certified, and bonded ensures that every project—from residential backyards to large commercial estates—is handled with the utmost professionalism and integrity.",
 
     video: {
-        videoUrl: "https://www.youtube.com/embed/rRid6GCJtgc", // Reemplazar con video de trabajos reales si existe
+        videoUrl: "https://gwd-website.b-cdn.net/lightning/videoeditado-01.mp4", // Reemplazar con video de trabajos reales si existe
         backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
     },
     cta: {

@@ -1,147 +1,134 @@
 import {
-	BlogDataProps,
-	BreadCrumbsDataProps,
-	CardDataProps,
-	MetaDataProps,
-	SidebarDataProps,
+    BlogDataProps,
+    BreadCrumbsDataProps,
+    CardDataProps,
+    MetaDataProps,
 } from "@/app/types";
-import BlogSection from "@/app/ui/BlogSection";
 import CardSection from "@/app/ui/CardSection";
 import PageHeading from "@/app/ui/PageHeading";
-import Sidebar from "@/app/ui/Sidebar/Sidebar";
+import Header from "../ui/Header/Header";
+import Footer from "../ui/Footer/Footer";
+import Link from 'next/link';
+
+// Estilo en línea para reutilizar tu color verde #374836
+const brandTextColor = { color: '#374836' };
 
 const BreadcrumbsData: BreadCrumbsDataProps = {
-	backgroundImage: "/assets/img/about_heading_bg.jpg",
-	title: "Latest Post",
-	breadcrumbs: [
-		{ label: "Home", link: "/", active: false },
-		{ label: "Blog", link: "", active: true },
-	],
+    backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+    title: "Expert Arborist Insights",
+    breadcrumbs: [
+        { label: "Home", link: "/", active: false },
+        { label: "Blog", link: "", active: true },
+    ],
 };
 
 const blogData: BlogDataProps = {
-	posts: [
-		{
-			id: 1,
-			image: "/assets/img/post_1.jpg",
-			date: "07 Mar 2025",
-			category: "Landscape",
-			title: "Transform Yard with Expert Landscape Design Services",
-			description:
-				"Discover how professional garden landscape design can elevate your outdoor space, create functional areas, and bring your vision to life with expert craftsmanship and personalized solutions.",
-			link: "/blog/transform-yard-with-expert-landscape-design-services",
-		},
-		{
-			id: 2,
-			image: "/assets/img/post_2.jpg",
-			date: "04 Mar 2025",
-			category: "Gardening",
-			title: "How a Landscape Design Service Enhances Your Garden's Appeal",
-			description:
-				"Learn how a skilled landscape design service can improve your garden’s aesthetics, increase property value, and create a serene environment tailored to your style and needs.",
-			link: "/blog/how-a-landscape-design-service-enhances-your-gardens-appeal",
-		},
-		{
-			id: 3,
-			image: "/assets/img/post_3.jpg",
-			date: "02 Mar 2024",
-			category: "Professional",
-			title: "Benefits of Hiring a Professional Landscape Designer",
-			description:
-				"Explore the advantages of working with a professional designer, including unique designs, better planning, cost efficiency, and enhanced outdoor living spaces for your home or business.",
-			link: "/blog/benefits-of-hiring-a-professional-landscape-designer",
-		},
-	],
-	pagination: [1, 2, 3, 4],
+    posts: [
+        {
+            id: 1,
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            date: "10 Apr 2026",
+            category: "Tree Care",
+            title: "The Science of Pruning: Why Timing is Everything",
+            description: "Discover why structural pruning is the best insurance policy for your home before Oregon's intense storm seasons begin.",
+            link: "/blog/science-of-pruning-timing",
+        },
+        {
+            id: 2,
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
+            date: "08 Apr 2026",
+            category: "Safety",
+            title: "When to Say Goodbye: Signs of a Hazardous Tree",
+            description: "Learn to identify root rot, hollow trunks, and dangerous leaning patterns that require immediate professional intervention.",
+            link: "/blog/dangerous-trees-removal-signs",
+        },
+        {
+            id: 3,
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
+            date: "05 Apr 2026",
+            category: "Invasive Species",
+            title: "Defeating Blackberries: Why Root Extraction is Key",
+            description: "Stop the endless cycle of thorns. We explain why mowing isn't enough to permanently kill invasive Himalayan Blackberry.",
+            link: "/blog/eliminating-blackberry-thickets",
+        },
+        {
+            id: 4,
+            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            date: "02 Apr 2026",
+            category: "Hardscaping",
+            title: "Fencing Styles That Withstand PNW Weather",
+            description: "Explore the best cedar and privacy designs that complement your landscape while resisting humidity and rot.",
+            link: "/blog/fencing-styles-durability",
+        },
+    ],
+    pagination: [1, 2],
 };
 
 const cardData: CardDataProps = {
-	backgroundImage: "/assets/img/card_bg.jpg",
-	tags: ["Home", "Garden", "Landscape Design", "Expert"],
-	title: "MAKE YOUR DREAM <br /> GARDEN INTO REALITY",
-	buttonLink: "/blog/blog-details",
-};
-
-const SidebarData: SidebarDataProps = {
-	categoriesData: {
-		category: "Categories",
-		categories: [
-			{ name: "Corporate", url: "/blog" },
-			{ name: "Company", url: "/blog" },
-			{ name: "Search Engine", url: "/blog" },
-			{ name: "Information", url: "/blog" },
-			{ name: "Painting", url: "/blog" },
-		],
-	},
-
-	recentPostsData: {
-		recentPost: "Recent Posts",
-		recentPosts: [
-			{
-				title: "How to studio setup...",
-				date: "15 Aug 2022",
-				image: "/assets/img/post_1.jpg",
-				url: "/blog/how-to-studio-setup",
-			},
-			{
-				title: "Creative people mind...",
-				date: "15 Aug 2022",
-				image: "/assets/img/post_2.jpg",
-				url: "/blog/creative-people-mind",
-			},
-			{
-				title: "AI take over human...",
-				date: "15 Aug 2022",
-				image: "/assets/img/post_3.jpg",
-				url: "/blog/ai-takeover-human",
-			},
-		],
-	},
-
-	archivesData: {
-		archive: "Archives",
-		archives: [
-			{ name: "Archives", url: "/archives" },
-			{ name: "15 Aug 2025", url: "/archives/2025-08-15" },
-			{ name: "20 Sep 2024", url: "/archives/2024-09-20" },
-			{ name: "11 Dec 2023", url: "/archives/2023-12-11" },
-			{ name: "25 Jun 2022", url: "/archives/2022-06-25" },
-		],
-	},
-
-	tagsData: {
-		tag: "Tags",
-		tags: [
-			{ name: "Business", url: "/blog" },
-			{ name: "Agency", url: "/blog" },
-			{ name: "Artwork", url: "/blog" },
-			{ name: "Marketing", url: "/blog" },
-			{ name: "Information", url: "/blog" },
-			{ name: "Design", url: "/blog" },
-			{ name: "Wordpress", url: "/blog" },
-		],
-	},
+    backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+    tags: ["Expert", "Reliable", "Safe"],
+    title: "GET A FREE QUOTE FOR <br /> YOUR NEXT PROJECT",
+    buttonLink: "/contact",
 };
 
 export const metadata: MetaDataProps = {
-	title: "Blogs - Garden Landscape Design Service Website",
+    title: "Blog - Lightning Tree Service | Tree Care & Hardscaping Tips",
 };
 
 export default function BlogPage() {
-	return (
-		<>
-			<PageHeading data={BreadcrumbsData} />
-			<section>
-				<div className="cs_height_100 cs_height_lg_70" />
-				<div className="container">
-					<div className="row">
-						<BlogSection data={blogData} />
-						<Sidebar data={SidebarData} />
-					</div>
-				</div>
-				<div className="cs_height_100 cs_height_lg_70" />
-			</section>
-			<CardSection data={cardData} />
-		</>
-	);
+    return (
+        <>
+            <Header />
+            <main>
+                <PageHeading data={BreadcrumbsData} />
+                <section>
+                    <div className="cs_height_100 cs_height_lg_70" />
+                    <div className="container">
+                        {/* GRID DINÁMICO: 1 col móvil, 2 col tablet, 3 col laptop */}
+                        <div className="row g-4"> 
+                            {blogData.posts.map((post) => (
+                                <div className="col-12 col-md-6 col-lg-4" key={post.id}>
+                                    <article className="cs_post cs_style_1 h-100 rounded-4 overflow-hidden border bg-white transition-all shadow-hover">
+                                        <Link href={post.link} className="cs_post_thumb d-block overflow-hidden">
+                                            <img 
+                                                src={post.image} 
+                                                alt={post.title} 
+                                                className="w-100 object-fit-cover transition-transform scale-hover" 
+                                                style={{ height: '260px' }} 
+                                            />
+                                        </Link>
+                                        <div className="cs_post_info p-4">
+                                            {/* Usamos el color verde corporativo aquí */}
+                                            <div className="cs_post_meta small text-uppercase fw-bold mb-3 d-flex align-items-center gap-2" style={brandTextColor}>
+                                                <i className="bi bi-calendar-event"></i>
+                                                <span>{post.date}</span>
+                                                <span className="text-muted opacity-50">|</span>
+                                                <i className="bi bi-tag-fill ms-1"></i>
+                                                <span>{post.category}</span>
+                                            </div>
+                                            
+                                            {/* El título del post también usa el verde */}
+                                            <h3 className="cs_post_title h5 fw-bold mb-3">
+                                                <Link href={post.link} className="text-decoration-none lh-base" style={brandTextColor}>
+                                                    {post.title}
+                                                </Link>
+                                            </h3>
+                                            
+                                            <p className="cs_post_subtitle mb-0 text-muted small lh-relaxed">
+                                                {post.description}
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="cs_height_100 cs_height_lg_70" />
+                </section>
+                <CardSection data={cardData} />
+            </main>
+            <Footer />
+        </>
+    );
 }
+

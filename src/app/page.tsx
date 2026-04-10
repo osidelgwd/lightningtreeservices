@@ -20,6 +20,7 @@ import WorksSection from "@/app/ui/WorksSection";
 import Header from "@/app/ui/Header/Header";
 import Footer1 from "@/app/ui/Footer/Footer1";
 import Footer from "./ui/Footer/Footer";
+import TopBar from "./ui/Header/TopBar";
 
 
 const heroData: HeroDataProps = {
@@ -115,58 +116,110 @@ const workingProcessData: WorkingProcessDataProps = {
 };
 
 const servicesData: ServiceDataProps = {
-    title: "SERVICES",
-    highlightedText: "Specialized Tree Care",
+    title: "OUR SERVICES",
+    highlightedText: "Professional Tree & Landscape Solutions",
     service: [
         {
-            title: "TREE REMOVAL",
-            subtitle:
-                "Safe and efficient removal of hazardous or unwanted trees using advanced rigging techniques.",
-            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-            link: "services/tree-removal",
-            tags: [
-                { label: "Hazardous Removal", url: "/" },
-                { label: "Stump Grinding", url: "/" },
-                { label: "Safe Cleanup", url: "/" },
-            ],
-            description: "",
-        },
-        {
-            title: "TREE PRUNING",
-            subtitle:
-                "Enhancing the structural integrity and beauty of your trees through professional trimming and thinning.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
-            link: "services/tree-pruning",
-            tags: [
-                { label: "Aesthetic Trimming", url: "/" },
-                { label: "Deadwooding", url: "/" },
-                { label: "Crown Reduction", url: "/" },
-            ],
-            description: "",
-        },
-        {
-            title: "TREE PRESERVATION",
-            subtitle:
-                "Science-based care to save diseased trees and maintain the health of your existing canopy.",
+            title: "TREE TRIMMING & PRUNING",
+            subtitle: "Expert structural pruning to enhance health, safety, and aesthetics of your canopy while preventing storm damage.",
             image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
-            link: "services/tree-preservation",
+            link: "/services/tree-trimming-pruning",
             tags: [
-                { label: "Deep Root Fertilization", url: "/" },
-                { label: "Disease Control", url: "/" },
-                { label: "Bracing", url: "/" },
+                { label: "Structural Pruning", url: "/" },
+                { label: "Crown Thinning", url: "/" },
+                { label: "Deadwooding", url: "/" },
             ],
             description: "",
         },
         {
-            title: "STUMP GRINDING",
-            subtitle:
-                "Removing unsightly stumps to clear the way for new landscaping or construction projects.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
-            link: "services/stump-grinding",
+            title: "SAFE TREE REMOVAL",
+            subtitle: "Professional removal of dead, hazardous, or unwanted trees using advanced rigging to protect your structure.",
+            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            link: "/services/tree-removal",
             tags: [
-                { label: "Full Removal", url: "/" },
-                { label: "Land Clearing", url: "/" },
-                { label: "Fast Results", url: "/" },
+                { label: "Hazardous Trees", url: "/" },
+                { label: "Emergency Service", url: "/" },
+                { label: "Stump Grinding", url: "/" },
+            ],
+            description: "",
+        },
+        {
+            title: "FRUIT TREE CARE",
+            subtitle: "Specialized seasonal maintenance to maximize fruit production and maintain the structural integrity of your orchard.",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            link: "/services/fruit-tree-care",
+            tags: [
+                { label: "Seasonal Pruning", url: "/" },
+                { label: "Disease Control", url: "/" },
+                { label: "Production Boost", url: "/" },
+            ],
+            description: "",
+        },
+        {
+            title: "BLACKBERRY REMOVAL",
+            subtitle: "Aggressive removal of invasive blackberry bushes (mora), including root eradication to prevent regrowth.",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
+            link: "/services/blackberry-removal",
+            tags: [
+                { label: "Mora Eradication", url: "/" },
+                { label: "Root Removal", url: "/" },
+                { label: "Land Reclamation", url: "/" },
+            ],
+            description: "",
+        },
+    ],
+};
+
+const servicesData1: ServiceDataProps = {
+    title: "OUR SERVICES",
+    highlightedText: "Professional Tree & Landscape Solutions",
+    service: [
+       
+        {
+            title: "YARD CLEAN UP",
+            subtitle: "Comprehensive seasonal debris removal, leaf clearing, and landscape rejuvenation for a pristine outdoor space.",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            link: "/services/yard-clean-up",
+            tags: [
+                { label: "Debris Removal", url: "/" },
+                { label: "Storm Cleanup", url: "/" },
+                { label: "Mulching", url: "/" },
+            ],
+            description: "",
+        },
+        {
+            title: "SOD & GRASS INSTALLATION",
+            subtitle: "Instant lawn transformation with premium sod installation and soil preparation for long-lasting greenery.",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            link: "/services/sod-grass-installation",
+            tags: [
+                { label: "New Lawn", url: "/" },
+                { label: "Soil Prep", url: "/" },
+                { label: "Sod Laying", url: "/" },
+            ],
+            description: "",
+        },
+        {
+            title: "RIVER ROCK & GRAVEL",
+            subtitle: "Decorative and functional stone installation for drainage solutions, pathways, and low-maintenance xeriscaping.",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            link: "/services/river-rock-gravel",
+            tags: [
+                { label: "Drainage Control", url: "/" },
+                { label: "Pathways", url: "/" },
+                { label: "Xeriscaping", url: "/" },
+            ],
+            description: "",
+        },
+        {
+            title: "FENCES & PAVERS",
+            subtitle: "Enhance privacy and outdoor living with custom fence builds and professional paver installation for patios and walks.",
+            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            link: "/services/fences-and-pavers",
+            tags: [
+                { label: "Custom Fencing", url: "/" },
+                { label: "Paver Patios", url: "/" },
+                { label: "Retaining Walls", url: "/" },
             ],
             description: "",
         },
@@ -251,13 +304,17 @@ export const metadata: MetaDataProps = {
 export default function HomePage() {
 	return (
 		<>
-        <Header />
+        <header className="cs_site_header_full_wrapper">
+                <TopBar />
+                <Header />
+            </header>
         <main>
 			<HeroSection data={heroData} />
 			<ValueSection data={valueData} />
 			<FeatureSection data={featureData} />
 			<WorkingProcessSection data={workingProcessData} />
 			<ServicesSection data={servicesData} />
+			<ServicesSection data={servicesData1} />
 			<TestimonialSection data={testimonialData} />
 			<WorksSection data={worksData} />
 			<CTASection data={ctaData} />

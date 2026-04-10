@@ -1,5 +1,6 @@
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "swiper/css";
 import "./sass/style.scss";
 import "react-toastify/dist/ReactToastify.css";

@@ -34,7 +34,7 @@ export default function ContactPage() {
         contactList: [
             {
                 label: "DIRECT EMAIL",
-                value: "info@lightningtreeservicellc.com",
+                value: "LightningTreeService@outlook.com",
             },
             {
                 label: "OFFICE PHONE",

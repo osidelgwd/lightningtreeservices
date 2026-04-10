@@ -121,3 +121,30 @@
 		}
 	}
 }
+/* --- PARCHE MAESTRO PARA TOPBAR --- */
+
+// 1. Cuando la página carga (Header absoluto)
+.cs_site_header {
+  top: 40px !important; // Empuja el header 40px hacia abajo
+  transition: top 0.3s ease !important;
+}
+
+// 2. Cuando haces scroll y se activa el Sticky
+// Aquí le decimos que vuelva a 0 para que no quede un hueco
+.cs_sticky_active, 
+.cs_sticky_header.cs_sticky_active,
+.cs_site_header.cs_sticky_active {
+  top: 0px !important;
+}
+
+// 3. Ajuste para el Hero (para que no se vea un corte raro)
+.cs_hero {
+  margin-top: 0px;
+}
+
+/* Si en móvil se ve mal, este ajuste lo centra */
+@media screen and (max-width: 1199px) {
+  .cs_site_header {
+    top: 40px !important; 
+  }
+}

@@ -22,46 +22,52 @@ const BreadcrumbsData: BreadCrumbsDataProps = {
 
 const servicesData: ServiceTwoDataProps[] = [
     {
-        title: "TREE REMOVAL",
-        description:
-            "Safe and efficient removal of hazardous, dead, or unwanted trees using advanced rigging techniques to protect your property.",
+        title: "TREE TRIMMING & PRUNING",
+        description: "Expert structural pruning to enhance health, safety, and aesthetics of your canopy while preventing storm damage.",
+        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
+        link: "/services/tree-trimming-pruning",
+    },
+    {
+        title: "SAFE TREE REMOVAL",
+        description: "Professional removal of dead, hazardous, or unwanted trees using advanced rigging to protect your structure.",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
         link: "/services/tree-removal",
     },
     {
-        title: "PROFESSIONAL PRUNING",
-        description:
-            "Structural pruning and crown thinning to improve tree health, aesthetics, and safety while promoting long-term growth.",
+        title: "FRUIT TREE CARE",
+        description: "Specialized seasonal maintenance to maximize fruit production and maintain the structural integrity of your orchard.",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
-        link: "/services/professional-pruning",
+        link: "/services/fruit-tree-care",
     },
     {
-        title: "STUMP GRINDING",
-        description:
-            "Complete elimination of tree stumps below ground level, allowing for immediate replanting or lawn restoration.",
-        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
-        link: "/services/stump-grinding",
-    },
-    {
-        title: "EMERGENCY STORM CARE",
-        description:
-            "Rapid response for storm-damaged trees that pose an immediate threat to homes, power lines, or public safety.",
+        title: "YARD CLEAN UP",
+        description: "Comprehensive seasonal debris removal, leaf clearing, and landscape rejuvenation for a pristine outdoor space.",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
-        link: "/services/emergency-storm-care",
+        link: "/services/yard-clean-up",
     },
     {
-        title: "LOT CLEARING",
-        description:
-            "Large-scale vegetation and tree removal for new constructions or land development projects with professional efficiency.",
+        title: "BLACKBERRY REMOVAL",
+        description: "Aggressive removal of invasive blackberry bushes (mora), including root eradication to prevent regrowth.",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
-        link: "/services/lot-clearing",
+        link: "/services/blackberry-removal",
     },
     {
-        title: "DISEASE DIAGNOSIS",
-        description:
-            "Expert evaluation of tree health to identify pests or diseases and provide effective treatment or mitigation plans.",
-        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
-        link: "/services/disease-diagnosis",
+        title: "SOD & GRASS INSTALLATION",
+        description: "Instant lawn transformation with premium sod installation and soil preparation for long-lasting greenery.",
+        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+        link: "/services/sod-grass-installation",
+    },
+    {
+        title: "RIVER ROCK & GRAVEL",
+        description: "Decorative and functional stone installation for drainage solutions, pathways, and low-maintenance xeriscaping.",
+        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+        link: "/services/river-rock-gravel",
+    },
+    {
+        title: "FENCES & PAVERS",
+        description: "Enhance privacy and outdoor living with custom fence builds and professional paver installation for patios and walks.",
+        image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+        link: "/services/fences-and-pavers",
     },
 ];
 
