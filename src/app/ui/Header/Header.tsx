@@ -14,7 +14,14 @@ const data = {
 			href: "/services",
 			children: [
 				{ label: "SERVICES", href: "/services" },
-				{ label: "SERVICE DETAILS", href: "/services/services-details" },
+				{ label: "TRIMMING & PRUNING", href: "/services/tree-trimming-pruning" },
+				{ label: "TREE REMOVAL", href: "/services/tree-removal" },
+				{ label: "FRUIT TREE CARE", href: "/services/fruit-tree-care" },
+				{ label: "YARD CLEAN UP", href: "/services/yard-clean-up" },
+				{ label: "BLACKBERRY REMOVAL", href: "/services/blackberry-removal" },
+				{ label: "SOD INSTALLATION", href: "/services/sod-grass-installation" },
+				{ label: "ROCK SOLUTIONS", href: "/services/river-rock-gravel" },
+				{ label: "FENCES & PAVERS", href: "/services/fences-and-pavers" },
 			],
 		},
 		// {
