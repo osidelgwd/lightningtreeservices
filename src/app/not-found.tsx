@@ -6,7 +6,7 @@ import PageHeading from "./ui/PageHeading";
 
 const Page404 = () => {
 	const BreadcrumbsData = {
-		backgroundImage: "/assets/img/about_heading_bg.jpg",
+		backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
 		title: "Page not found",
 		breadcrumbs: [
 			{ label: "Home", link: "/", active: false },
@@ -15,11 +15,10 @@ const Page404 = () => {
 	};
 
 	const errData = {
-		title: "404",
-		subtitle: "Oops! Page Not Found!",
-		message:
-			"Sorry, the page you're seeking isn't here. It could have been relocated or removed.",
-	};
+    title: "404",
+    subtitle: "Oops! Page Not Found",
+    message: "Sorry, the page you're looking for doesn't exist. It might have been moved or deleted.",
+};
 	return (
 		<>
 			<Header />

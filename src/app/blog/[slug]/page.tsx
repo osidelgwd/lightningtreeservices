@@ -1,19 +1,12 @@
-"use client";
-import { useParams } from "next/navigation";
-import PageHeading from "@/app/ui/PageHeading";
-import BlogDetails from "@/app/ui/BlogsDetails";
-import BlogSidebar from "@/app/ui/Sidebar2/BlogSidebar";
-import Header from "@/app/ui/Header/Header";
-import Footer from "@/app/ui/Footer/Footer";
+import BlogDetailsClient from "./BlogDetailsClient";
 
 const blogDetailsContent: any = {
-    // 1. Coincide con /blog/science-of-pruning-timing
     "science-of-pruning-timing": {
         title: "The Science of Pruning: Why Timing is Everything",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
         date: "10 Apr 2026",
         category: "Tree Care",
-        content: `
+        content:  `
             <p>Professional tree pruning is far more than a simple cosmetic haircut for your landscape. At <strong>Lightning Tree Service LLC</strong>, we treat every cut as a biological intervention. In the Pacific Northwest, understanding the seasonal cycle of your trees is the difference between a thriving canopy and a hazardous one. Pruning at the right time—typically during the dormant winter months or early spring—allows the tree to direct its energy toward healing the "wound" created by the cut before pests and diseases become active in the warmer months.</p>
 
             <h4 style="color: #374836">The Structural Integrity of the Canopy</h4>
@@ -25,14 +18,12 @@ const blogDetailsContent: any = {
             <p>In addition to safety, pruning encourages fruit production and flowering. By removing old wood, you stimulate the growth of new, healthy shoots that will bear the brunt of next season's growth. Our team uses sterilized equipment to prevent the cross-contamination of diseases between trees, a detail often overlooked by non-professionals but critical for the survival of heritage oaks and ornamental maples.</p>
         `,
     },
-
-    // 2. Coincide con /blog/dangerous-trees-removal-signs
     "dangerous-trees-removal-signs": {
         title: "When to Say Goodbye: Signs of a Hazardous Tree",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
         date: "08 Apr 2026",
         category: "Safety",
-        content: `
+               content: `
             <p>Deciding to remove a tree is never easy, but at <strong>Lightning Tree Service LLC</strong>, we prioritize the safety of your family and your structures above all else. In Oregon, trees grow tall and heavy, and while they provide beauty and shade, they can quickly become hazardous liabilities if they are diseased or structurally compromised. Recognizing the warning signs early can save you thousands of dollars in emergency repairs and insurance deductibles.</p>
 
             <h4 style="color: #374836">1. Root Plate Heaving and Fungal Growth</h4>
@@ -44,14 +35,12 @@ const blogDetailsContent: any = {
             <p>Safe removal involves using advanced rigging to lower sections piece by piece, ensuring that even as the tree is dismantled, your roof and power lines remain untouched by the heavy timber. Our crews are trained in high-angle removals and crane-assisted extractions for those extra-large Douglas Firs that lean dangerously over structures. We don't just cut and drop; we manage the energy of the falling wood to ensure a zero-impact removal every single time.</p>
         `,
     },
-
-    // 3. Coincide con /blog/eliminating-blackberry-thickets
     "eliminating-blackberry-thickets": {
         title: "Defeating Blackberries: Why Root Extraction is Key",
         image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
         date: "05 Apr 2026",
         category: "Invasive Species",
-        content: `
+              content: `
             <p>The Himalayan Blackberry is a relentless invader in the Pacific Northwest. Anyone who has lived here long enough knows that simply cutting these bushes back with a weed-whacker is a temporary fix at best. Within weeks, the thickets return—often thicker and more aggressive than before. At <strong>Lightning Tree Service LLC</strong>, we specialize in land reclamation by addressing the root of the problem, literally.</p>
 
             <h4 style="color: #374836">The Biology of the "Mora"</h4>
@@ -61,14 +50,12 @@ const blogDetailsContent: any = {
             <p>Our process involves high-torque machinery to mulch the overhead mass, followed by mechanical or manual extraction of the root balls. We don't just clear the space; we prepare the soil for its next life. Removing these thickets does more than improve your view; it eliminates breeding grounds for rodents and significantly reduces the fire hazard around your home. Once the land is cleared and the roots are gone, we can install river rock, sod, or mulch to ensure the "Mora" never finds its way back into your garden. Reclaiming your land increases property value and allows you to actually use your outdoor space without the constant battle against thorns.</p>
         `,
     },
-
-    // 4. Coincide con /blog/fencing-styles-durability
     "fencing-styles-durability": {
         title: "Fencing Styles That Withstand PNW Weather",
         image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
         date: "02 Apr 2026",
         category: "Hardscaping",
-        content: `
+                content: `
             <p>In the Pacific Northwest, a fence is constantly under attack from moisture, moss, and wind. At <strong>Lightning Tree Service LLC</strong>, we don't just build fences for the look; we build them for endurance. Choosing the right style and material is crucial for ensuring that your investment doesn't rot or lean after just a few years of our intense rain cycles.</p>
 
             <h4 style="color: #374836">Cedar: The Gold Standard for the NorthWest</h4>
@@ -80,56 +67,35 @@ const blogDetailsContent: any = {
     }
 };
 
-export default function BlogDetailsPage() {
-    const params = useParams();
-    const slug = params.slug as string;
+// Avisamos a Vercel qué rutas debe generar
+export async function generateStaticParams() {
+    return [
+        { slug: "science-of-pruning-timing" },
+        { slug: "dangerous-trees-removal-signs" },
+        { slug: "eliminating-blackberry-thickets" },
+        { slug: "fencing-styles-durability" },
+    ];
+}
+
+export default async function BlogDetailsPage({ 
+    params 
+}: { 
+    params: Promise<{ slug: string }> | { slug: string } 
+}) {
+    // Esto arregla el error de "undefined" en local
+    const resolvedParams = await (params instanceof Promise ? params : Promise.resolve(params));
+    const slug = resolvedParams.slug;
+    
     const post = blogDetailsContent[slug];
 
     if (!post) {
         return (
             <div className="container py-5 text-center">
                 <h2 style={{color: '#374836'}}>Post not found</h2>
-                <p>The article you are looking for does not exist or the link is incorrect.</p>
+                <p>The article you are looking for does not exist.</p>
             </div>
         );
     }
 
-    const breadcrumbs = {
-        title: post.title,
-        backgroundImage: post.image,
-        breadcrumbs: [
-            { label: "Home", link: "/", active: false },
-            { label: "Blog", link: "/blog", active: false },
-            { label: post.title, link: "", active: true },
-        ],
-    };
-
-    return (
-        <>
-        <Header />
-        <main>
-            <PageHeading data={breadcrumbs} />
-            <section className="cs_blog_details_section">
-                <div className="cs_height_100 cs_height_lg_70" />
-                <div className="container">
-                    <div className="row">
-                        {/* Contenido Principal */}
-                        <div className="col-lg-8">
-                            <BlogDetails data={post} />
-                        </div>
-
-                        {/* Sidebar con verde corporativo */}
-                        <aside className="col-lg-4 ps-lg-5 mt-5 mt-lg-0">
-                            <div className="sticky-top" style={{ top: '100px', zIndex: 10 }}>
-                                <BlogSidebar />
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-                <div className="cs_height_100 cs_height_lg_70" />
-            </section>
-            </main>
-            <Footer />
-        </>
-    );
+    return <BlogDetailsClient post={post} />;
 }
