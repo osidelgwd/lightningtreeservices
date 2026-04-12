@@ -45,7 +45,7 @@ const aboutUsData: AboutUsDataProps = {
     },
     cta: {
         backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-        buttonUrl: "/projects",
+        buttonUrl: "/gallery",
         buttonText: "See Our Work",
         title: "",
     },
@@ -194,7 +194,7 @@ export default function AboutPage() {
 			</div>
 			{/* <TeamMemberSection data={teamMembersData} /> */}
 			{/* <BrandSection data={brandLogos} /> */}
-			<WorkSection1 data={worksData} />
+			{/* <WorkSection1 data={worksData} /> */}
 			<CardSection data={cardData} />
             </main>
             <Footer />

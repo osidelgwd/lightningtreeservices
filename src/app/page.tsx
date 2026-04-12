@@ -43,9 +43,9 @@ const heroData: HeroDataProps = {
     },
     backgrounds: [
         "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-        "/assets/img/hero_bg_4.jpg",
-        "/assets/img/hero_bg_2.jpg",
-        "/assets/img/hero_bg_4.jpg",
+        "https://gwd-website.b-cdn.net/lightning/bench-is-garden-there-is-bright-.png",
+        "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+        "https://gwd-website.b-cdn.net/lightning/bench-is-garden-there-is-bright-.png",
     ],
 };
 
