@@ -1,12 +1,15 @@
 import { BreadCrumbsDataProps, MetaDataProps } from "@/app/types";
 import PageHeading from "@/app/ui/PageHeading";
+import TopBar from "../ui/Header/TopBar";
+import Footer from "../ui/Footer/Footer";
+import Header from "../ui/Header/Header";
 
 const BreadcrumbsData: BreadCrumbsDataProps = {
-    backgroundImage: "/assets/img/about_heading_bg.jpg",
+    backgroundImage: "https://gwd-website.b-cdn.net/lightning/banner-2222.jpeg",
     title: "Privacy Policy",
     breadcrumbs: [
         { label: "Home", link: "/", active: false },
-        { label: "Privacy Policy", link: "", active: true },
+        { label: "Privacy Policy", link: "privacy-policy", active: true },
     ],
 };
 
@@ -17,6 +20,8 @@ export const metadata: MetaDataProps = {
 export default function PrivacyPolicy() {
     return (
         <>
+        <TopBar />
+        <Header />
             <PageHeading data={BreadcrumbsData} />
             <div className="cs_height_70 cs_height_lg_50" />
             <div className="container">
@@ -85,6 +90,7 @@ export default function PrivacyPolicy() {
                 </div>
             </div>
             <div className="cs_height_70 cs_height_lg_50" />
+            <Footer />
         </>
     );
 }

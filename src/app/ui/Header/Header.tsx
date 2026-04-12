@@ -8,7 +8,12 @@ const data = {
 	logoUrl: "/",
 	menuItems: [
 		{ label: "HOME", href: "/" },
-		{ label: "ABOUT", href: "/about" },
+		{ label: "ABOUT", href: "/about",
+			children: [
+				{ label: "ABOUT US", href: "/about" },
+				{ label: "FAQ", href: "/faq" },
+			]
+		 },
 		{
 			label: "SERVICES",
 			href: "/services",
@@ -24,22 +29,18 @@ const data = {
 				{ label: "FENCES & PAVERS", href: "/services/fences-and-pavers" },
 			],
 		},
-		// {
-		// 	label: "BLOG",
-		// 	href: "/blog",
-		// 	children: [
-		// 		{ label: "BLOG", href: "/blog" },
-		// 		{ label: "BLOG DETAILS", href: "/blog/blog-details" },
-		// 	],
-		// },
+		{
+			label: "BLOG",
+			href: "/blog",
+			children: [
+				{ label: "BLOG", href: "/blog" },
+			],
+		},
 		{
 			label: "GALLERY",
 			href: "/gallery",
 		},
-		{
-			label: "FAQ",
-			href: "/faq",
-		},
+		
 		{ label: "CONTACT", href: "/contact" },
 	],
 };
@@ -86,7 +87,71 @@ const Header = () => {
 									/>
 								</Link>
 							</div>
-							<div className="cs_main_header_center">
+						<div className="cs_main_header_center">
+  <div className="cs_nav cs_heading_color">
+    <nav
+      className={`cs_nav_list_wrap text-uppercase ${
+        isShowMobileMenu ? "cs_active" : ""
+      }`}
+    >
+      <ul className="cs_nav_list d-lg-flex flex-lg-nowrap align-items-lg-center">
+        {data.menuItems.map((item, index) => (
+          <li
+            key={index}
+            className={item.children ? "menu-item-has-children" : ""}
+          >
+            <Link href={item.href} className="d-inline-flex align-items-center">
+              {item.label}
+              {/* FLECHA: d-none (oculta en móvil) | d-lg-inline-block (visible en laptop) */}
+              {item.children && (
+                <i 
+                  className="bi bi-chevron-down ms-2 d-none d-lg-inline-block" 
+                  style={{ fontSize: '12px' }}
+                ></i>
+              )}
+            </Link>
+
+            {item.children && (
+              <>
+                <ul
+                  style={{
+                    display: openMobileSubmenuIndex.includes(index)
+                      ? "block"
+                      : "none",
+                  }}
+                >
+                  {item.children.map((child, i) => (
+                    <li
+                      key={i}
+                      onClick={() => setIsShowMobileMenu(!isShowMobileMenu)}
+                    >
+                      <Link href={child.href}>{child.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+                <span
+                  className={`cs_munu_dropdown_toggle ${
+                    openMobileSubmenuIndex.includes(index) ? "active" : ""
+                  }`}
+                  onClick={() => handleOpenMobileSubmenu(index)}
+                >
+                  <span></span>
+                </span>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <span
+      className={`cs_menu_toggle ${isShowMobileMenu ? "cs_toggle_active" : ""}`}
+      onClick={() => setIsShowMobileMenu(!isShowMobileMenu)}
+    >
+      <span></span>
+    </span>
+  </div>
+</div>
+							{/* <div className="cs_main_header_center">
 								<div className="cs_nav cs_heading_color">
 									<nav
 										className={`cs_nav_list_wrap text-uppercase ${
@@ -149,7 +214,7 @@ const Header = () => {
 										<span></span>
 									</span>
 								</div>
-							</div>
+							</div> */}
 							{/* <div className="cs_main_header_right">
 								<div className="cs_header_icon_btns">
 									<Link href="/login" className="cs_header_icon_btn cs_center">

@@ -57,6 +57,13 @@ export default function WorksSection({ data }: WorksSectionProps) {
                                                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%), url(${slide.image})`,
                                             }}
                                         />
+                                        {/* <div
+                                            className="cs_card_thumb cs_bg_filed cs_mb_40"
+                                            style={{
+                                                // CAPA NEGRA: Gradiente sutil para dar profundidad a la miniatura
+                                                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%), url(${slide.image})`,
+                                            }}
+                                        /> */}
                                         <div className="cs_card_info">
                                             <ul className="cs_card_info_list cs_mp_0">
                                                 <li>

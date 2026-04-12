@@ -9,6 +9,7 @@ import CardSection from "@/app/ui/CardSection";
 import PageHeading from "@/app/ui/PageHeading";
 import Header from "../ui/Header/Header";
 import Footer from "../ui/Footer/Footer";
+import TopBar from "../ui/Header/TopBar";
 
 const BreadcrumbsData: BreadCrumbsDataProps = {
     backgroundImage: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.18.00%20PM.jpeg",
@@ -91,6 +92,7 @@ export const metadata: MetaDataProps = {
 export default function FaqPage() {
     return (
         <>
+        <TopBar />
         <Header />
         <main>
             <PageHeading data={BreadcrumbsData} />

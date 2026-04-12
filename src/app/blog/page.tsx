@@ -9,6 +9,7 @@ import PageHeading from "@/app/ui/PageHeading";
 import Header from "../ui/Header/Header";
 import Footer from "../ui/Footer/Footer";
 import Link from 'next/link';
+import TopBar from "../ui/Header/TopBar";
 
 // Estilo en línea para reutilizar tu color verde #374836
 const brandTextColor = { color: '#374836' };
@@ -44,7 +45,7 @@ const blogData: BlogDataProps = {
         },
         {
             id: 3,
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/bladsshshss.jpeg",
             date: "05 Apr 2026",
             category: "Invasive Species",
             title: "Defeating Blackberries: Why Root Extraction is Key",
@@ -53,7 +54,7 @@ const blogData: BlogDataProps = {
         },
         {
             id: 4,
-            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/fence-111.jpeg",
             date: "02 Apr 2026",
             category: "Hardscaping",
             title: "Fencing Styles That Withstand PNW Weather",
@@ -78,6 +79,7 @@ export const metadata: MetaDataProps = {
 export default function BlogPage() {
     return (
         <>
+        <TopBar />
             <Header />
             <main>
                 <PageHeading data={BreadcrumbsData} />

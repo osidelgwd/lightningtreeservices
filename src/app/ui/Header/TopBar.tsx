@@ -44,11 +44,32 @@ const TopBar = () => {
               <span>Call Us: <strong>(360) 980-7886</strong></span>
             </a>
             
-            <div className="cs_social_links d-flex gap-3 border-start ps-4" style={{ borderColor: '#ffffff26 !important' }}>
-              <a href="#" className="text-white text-decoration-none"><i className="bi bi-facebook"></i></a>
-              <a href="#" className="text-white text-decoration-none"><i className="bi bi-instagram"></i></a>
-              <a href="#" className="text-white text-decoration-none"><i className="bi bi-whatsapp"></i></a>
-            </div>
+           <div className="cs_social_links d-flex gap-3 border-start ps-4" style={{ borderColor: '#ffffff26' }}>
+            <a 
+              href="https://www.facebook.com/LightningTreeServiceLLC" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-decoration-none"
+            >
+              <i className="bi bi-facebook"></i>
+            </a>
+            {/* <a 
+              href="https://instagram.com/TU_PERFIL" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white text-decoration-none"
+            >
+              <i className="bi bi-instagram"></i>
+            </a>*/}
+                         <a 
+                href="https://wa.me/13609807886" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white text-decoration-none"
+              >
+                <i className="bi bi-whatsapp"></i>
+              </a>
+          </div>
           </div>
 
         </div>

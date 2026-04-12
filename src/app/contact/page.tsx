@@ -10,6 +10,7 @@ import ContactSection from "@/app/ui/Contact";
 import PageHeading from "@/app/ui/PageHeading";
 import Header from "../ui/Header/Header";
 import Footer from "../ui/Footer/Footer";
+import TopBar from "../ui/Header/TopBar";
 
 // Títulos optimizados para SEO local
 export const metadata: MetaDataProps = {
@@ -65,6 +66,7 @@ const cardData: CardDataProps = {
 
     return (
         <>
+        <TopBar />
         <Header />
         <main>
             <PageHeading data={BreadcrumbsData} />

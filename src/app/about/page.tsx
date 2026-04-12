@@ -19,6 +19,7 @@ import ValueSection from "@/app/ui/ValueSection";
 import WorkSection1 from "@/app/ui/WorksSection/WorkSection1";
 import Header from "../ui/Header/Header";
 import Footer from "../ui/Footer/Footer";
+import TopBar from "../ui/Header/TopBar";
 
 
 
@@ -183,7 +184,7 @@ export const metadata: MetaDataProps = {
 export default function AboutPage() {
 	return (
 		<>
-        
+            <TopBar />
             <Header />
         <main>
 			<PageHeading data={BreadcrumbsData} />

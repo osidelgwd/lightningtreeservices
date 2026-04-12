@@ -44,8 +44,8 @@ const heroData: HeroDataProps = {
     backgrounds: [
         "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
         "https://gwd-website.b-cdn.net/lightning/bench-is-garden-there-is-bright-.png",
-        "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-        "https://gwd-website.b-cdn.net/lightning/bench-is-garden-there-is-bright-.png",
+        "https://gwd-website.b-cdn.net/lightning/banner-2222.jpeg",
+        "https://gwd-website.b-cdn.net/lightning/banner77777.jpeg",
     ],
 };
 
@@ -122,7 +122,7 @@ const servicesData: ServiceDataProps = {
         {
             title: "TREE TRIMMING & PRUNING",
             subtitle: "Expert structural pruning to enhance health, safety, and aesthetics of your canopy while preventing storm damage.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-10%20at%206.43.46%20AM.jpeg",
             link: "/services/tree-trimming-pruning",
             tags: [
                 { label: "Structural Pruning", url: "/" },
@@ -134,7 +134,7 @@ const servicesData: ServiceDataProps = {
         {
             title: "SAFE TREE REMOVAL",
             subtitle: "Professional removal of dead, hazardous, or unwanted trees using advanced rigging to protect your structure.",
-            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.18.00%20PM.jpeg",
             link: "/services/tree-removal",
             tags: [
                 { label: "Hazardous Trees", url: "/" },
@@ -146,7 +146,7 @@ const servicesData: ServiceDataProps = {
         {
             title: "FRUIT TREE CARE",
             subtitle: "Specialized seasonal maintenance to maximize fruit production and maintain the structural integrity of your orchard.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.30%20PM.jpeg",
             link: "/services/fruit-tree-care",
             tags: [
                 { label: "Seasonal Pruning", url: "/" },
@@ -158,7 +158,7 @@ const servicesData: ServiceDataProps = {
         {
             title: "BLACKBERRY REMOVAL",
             subtitle: "Aggressive removal of invasive blackberry bushes (mora), including root eradication to prevent regrowth.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.26.19%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/bladsshshss.jpeg",
             link: "/services/blackberry-removal",
             tags: [
                 { label: "Mora Eradication", url: "/" },
@@ -178,7 +178,7 @@ const servicesData1: ServiceDataProps = {
         {
             title: "YARD CLEAN UP",
             subtitle: "Comprehensive seasonal debris removal, leaf clearing, and landscape rejuvenation for a pristine outdoor space.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/banner-4444.jpeg",
             link: "/services/yard-clean-up",
             tags: [
                 { label: "Debris Removal", url: "/" },
@@ -190,7 +190,7 @@ const servicesData1: ServiceDataProps = {
         {
             title: "SOD & GRASS INSTALLATION",
             subtitle: "Instant lawn transformation with premium sod installation and soil preparation for long-lasting greenery.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/sdsasdasdsad.jpeg",
             link: "/services/sod-grass-installation",
             tags: [
                 { label: "New Lawn", url: "/" },
@@ -202,7 +202,7 @@ const servicesData1: ServiceDataProps = {
         {
             title: "RIVER ROCK & GRAVEL",
             subtitle: "Decorative and functional stone installation for drainage solutions, pathways, and low-maintenance xeriscaping.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.17.59%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-09%20at%209.02.02%20PM.jpeg",
             link: "/services/river-rock-gravel",
             tags: [
                 { label: "Drainage Control", url: "/" },
@@ -262,33 +262,61 @@ const testimonialData: TestimonialDataProps = {
     ],
 };
 
+
 const worksData: WorksDataProps = {
     title: "EXPLORE OUR <span>LATEST</span> <br /> TREE CARE <span>PROJECTS</span>",
     subtitle: "OUR WORK",
     slides: [
         {
-            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-            name: "EMERGENCY REMOVAL",
+            image: "https://gwd-website.b-cdn.net/lightning/sdasdsadsad.png",
+            name: "STRUCTURAL TRIMMING",
             location: "VANCOUVER, WA",
             description:
-                "Swift removal of a storm-damaged tree leaning dangerously over a residential structure.",
-        },
-        {
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.18.00%20PM.jpeg",
-            name: "CROWN REDUCTION",
-            location: "PORTLAND, OR",
-            description:
-                "Technical pruning of a century-old maple to improve health and reduce wind resistance.",
+                "Precision canopy thinning and structural pruning to improve airflow and storm resistance.",
         },
         {
             image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
-            name: "ESTATE PRESERVATION",
+            name: "HAZARDOUS REMOVAL",
+            location: "PORTLAND, OR",
+            description:
+                "Safe extraction of a large diseased tree using advanced rigging techniques to protect the property.",
+        },
+        {
+            image: "https://gwd-website.b-cdn.net/lightning/banner-4444.jpeg",
+            name: "ORCHARD MAINTENANCE",
             location: "CAMAS, WA",
             description:
-                "Comprehensive health assessment and preservation plan for a private 5-acre estate.",
+                "Specialized fruit tree pruning to maximize seasonal production and maintain tree health.",
         },
     ],
 };
+// const worksData: WorksDataProps = {
+//     title: "EXPLORE OUR <span>LATEST</span> <br /> TREE CARE <span>PROJECTS</span>",
+//     subtitle: "OUR WORK",
+//     slides: [
+//         {
+//             image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+//             name: "EMERGENCY REMOVAL",
+//             location: "VANCOUVER, WA",
+//             description:
+//                 "Swift removal of a storm-damaged tree leaning dangerously over a residential structure.",
+//         },
+//         {
+//             image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-06%20at%207.18.00%20PM.jpeg",
+//             name: "CROWN REDUCTION",
+//             location: "PORTLAND, OR",
+//             description:
+//                 "Technical pruning of a century-old maple to improve health and reduce wind resistance.",
+//         },
+//         {
+//             image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+//             name: "ESTATE PRESERVATION",
+//             location: "CAMAS, WA",
+//             description:
+//                 "Comprehensive health assessment and preservation plan for a private 5-acre estate.",
+//         },
+//     ],
+// };
 
 const ctaData: CTADataProps = {
     backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
