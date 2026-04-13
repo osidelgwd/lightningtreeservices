@@ -202,7 +202,7 @@ const servicesData1: ServiceDataProps = {
         {
             title: "RIVER ROCK & GRAVEL",
             subtitle: "Decorative and functional stone installation for drainage solutions, pathways, and low-maintenance xeriscaping.",
-            image: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-09%20at%209.02.02%20PM.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/banner88888.jpeg",
             link: "/services/river-rock-gravel",
             tags: [
                 { label: "Drainage Control", url: "/" },
@@ -214,7 +214,7 @@ const servicesData1: ServiceDataProps = {
         {
             title: "FENCES & PAVERS",
             subtitle: "Enhance privacy and outdoor living with custom fence builds and professional paver installation for patios and walks.",
-            image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            image: "https://gwd-website.b-cdn.net/lightning/fence-111.jpeg",
             link: "/services/fences-and-pavers",
             tags: [
                 { label: "Custom Fencing", url: "/" },

@@ -179,13 +179,13 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         titleHighlight: "<span>DURABLE & DECORATIVE</span> ROCK SOLUTIONS",
         video: {
             videoUrl: "https://gwd-website.b-cdn.net/lightning/videoeditado-01.mp4",
-            backgroundImage: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-09%20at%209.02.02%20PM.jpeg",
+            backgroundImage: "https://gwd-website.b-cdn.net/lightning/banner88888.jpeg",
         },
         cta: {
             title: "Upgrade Your Landscape Drainage",
             buttonUrl: "/contact",
             buttonText: "Request Stone Quote",
-            backgroundImage: "https://gwd-website.b-cdn.net/lightning/WhatsApp%20Image%202026-04-09%20at%209.02.02%20PM.jpeg",
+            backgroundImage: "https://gwd-website.b-cdn.net/lightning/banner88888.jpeg",
         },
         description: `River rock and gravel are more than just decorative elements; they are essential tools for a functional and low-maintenance landscape. At <strong>Lightning Tree Service LLC</strong>, we specialize in the professional installation of stone features that solve drainage issues while adding a modern, high-end aesthetic to your property. Stone is the perfect solution for areas where grass struggles to grow or where water tends to pool during Oregon's rainy months. <br /><br />
         We offer a wide variety of stones, from smooth river rocks for dry creek beds to crushed gravel for stable pathways and driveways. Our installation process involves deep excavation and the placement of heavy-duty weed barrier fabric to ensure your new stone feature remains clean and maintenance-free. By using stones strategically around the base of trees or alongside your home, we help manage moisture runoff, protecting your foundation from water damage and preventing soil erosion. <br /><br />
@@ -206,13 +206,13 @@ const allServicesInfo: Record<string, ServiceDetailsProps> = {
         titleHighlight: "<span>CUSTOM CRAFTED</span> FENCES & PAVERS",
         video: {
             videoUrl: "https://gwd-website.b-cdn.net/lightning/videoeditado-01.mp4",
-            backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            backgroundImage: "https://gwd-website.b-cdn.net/lightning/fence-111.jpeg",
         },
         cta: {
             title: "Built for Security and Style",
             buttonUrl: "/contact",
             buttonText: "Plan My Project",
-            backgroundImage: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+            backgroundImage: "https://gwd-website.b-cdn.net/lightning/fence-111.jpeg",
         },
         description: `Enhancing your home's outdoor living space requires a combination of durable materials and expert craftsmanship. At <strong>Lightning Tree Service LLC</strong>, we specialize in high-quality fencing and professional paver installation that transforms functional yards into beautiful retreats. We understand that a fence is not just a boundary—it's about privacy, security, and curb appeal. We build custom wood fences using premium cedar and pressure-treated lumber designed to withstand our damp climate without warping or rotting. <br /><br />
         Our paver services offer a sophisticated alternative to standard cracked concrete. Whether you desire a new patio for summer BBQs, a winding garden path, or a robust stone driveway, pavers provide a flexible and long-lasting solution. We focus heavily on the 'invisible' part of the project: the foundation. Our team performs deep excavation and compaction, installing a multi-layer base of gravel and sand to ensure perfect drainage and prevent sinking or shifting over time. This attention to detail ensures your investment looks as good in ten years as it does on day one. <br /><br />

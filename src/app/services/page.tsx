@@ -65,7 +65,7 @@ const servicesData: ServiceTwoDataProps[] = [
     {
         title: "FENCES & PAVERS",
         description: "Enhance privacy and outdoor living with custom fence builds and professional paver installation for patios and walks.",
-        image: "https://gwd-website.b-cdn.net/lightning/DADADASDA.jpeg",
+        image: "https://gwd-website.b-cdn.net/lightning/fence-111.jpeg",
         link: "/services/fences-and-pavers",
     },
 ];

@@ -6,6 +6,7 @@ import ServiceDetailsSection from "@/app/ui/ServiceDetails";
 import WorkingProcess from "@/app/ui/WorkingProcess";
 import TestimonialSection from "@/app/ui/TestimonialSection";
 import CardSection from "@/app/ui/CardSection";
+import TopBar from "@/app/ui/Header/TopBar";
 
 export default function ServiceDetailsClient({ 
     data, 
@@ -15,6 +16,7 @@ export default function ServiceDetailsClient({
 }: any) {
     return (
         <>
+        <TopBar />
             <Header />
             <main>
                 <ServiceDetailsSection data={data} />
